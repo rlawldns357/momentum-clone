@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Momentum</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="weather" class="weather hidden">
+    <span class="city"></span>
+    <span class="temp"></span>
+    <span class="desc"></span>
+  </div>
+
+  <h2 id="clock">00:00:00</h2>
+
+  <form id="login-form" class="hidden">
+    <input required maxlength="15" type="text" placeholder="What is your name?" />
+  </form>
+
+  <h1 id="greeting" class="hidden"></h1>
+
+  <form id="todo-form" class="hidden">
+    <input type="text" placeholder="Write a To Do and Press Enter" required />
+  </form>
+  <ul id="todo-list"></ul>
+
+  <div id="quote" class="quote hidden">
+    <span></span>
+    <span></span>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
