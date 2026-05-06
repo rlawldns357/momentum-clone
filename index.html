@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Momentum</title>
+  <title>괴테는 모든 것을 말했다</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Serif+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
@@ -13,23 +16,34 @@
     <span class="desc"></span>
   </div>
 
-  <h2 id="clock">00:00:00</h2>
+  <header class="site-header">
+    <h2 id="clock">00:00:00</h2>
+    <p class="site-title">괴테는 모든 것을 말했다</p>
+    <p class="site-subtitle">— 오늘의 한 줄 명언</p>
+  </header>
 
-  <form id="login-form" class="hidden">
-    <input required maxlength="15" type="text" placeholder="What is your name?" />
-  </form>
+  <main class="stage">
+    <form id="login-form" class="hidden">
+      <input required maxlength="15" type="text" placeholder="이름을 알려주세요" />
+    </form>
 
-  <h1 id="greeting" class="hidden"></h1>
+    <h1 id="greeting" class="hidden"></h1>
 
-  <form id="todo-form" class="hidden">
-    <input type="text" placeholder="Write a To Do and Press Enter" required />
-  </form>
-  <ul id="todo-list"></ul>
+    <section id="quote" class="quote-card hidden">
+      <span class="quote-mark">&ldquo;</span>
+      <p class="quote-text"></p>
+      <p class="quote-author"></p>
+    </section>
 
-  <div id="quote" class="quote hidden">
-    <span></span>
-    <span></span>
-  </div>
+    <form id="todo-form" class="hidden">
+      <input type="text" placeholder="오늘 마음에 남길 한 가지를 적어보세요" required />
+    </form>
+    <ul id="todo-list"></ul>
+  </main>
+
+  <footer class="site-footer">
+    <p>딸이 만든 작은 명언 사이트 · made with ♡</p>
+  </footer>
 
   <script src="app.js"></script>
 </body>
